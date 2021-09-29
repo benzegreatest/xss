@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   version: 1.0.0
   title: Testing Stuff
-  description: '<table><mglyph><svg><mtext><textarea><a title="</textarea><script>alert('xss')</script>"></a></textarea></mtext></svg></mglyph></table>'
+  description: '<table><textarea><a title="</textarea><iframe onload=alert(document.domain)>"></a></textarea></table>'
 paths:
   /:
     get:
